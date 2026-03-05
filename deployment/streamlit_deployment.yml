@@ -1,0 +1,15 @@
+# BrandSphere AI — Streamlit Cloud Deployment Config
+# CRS AI Capstone 2025-26
+
+name: brandsphere-ai
+entrypoint: app.py
+python: "3.11"
+
+secrets:
+  - GEMINI_API_KEY
+
+dependencies:
+  - config/requirements.txt
+
+environment:
+  - STREAMLIT_SERVER_MAX_UPLOAD_SIZE=50
